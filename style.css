@@ -1,0 +1,114 @@
+header {/*A estilização do cabeçalho defini que o texto se alinhara ao centro por questão de estilo*/
+    text-align: center;
+    font-size: x-large;
+    background-color: #4B7980;
+    margin-top: 0;
+    padding: 10px;
+    color: white;
+}
+*{/*Border-box para facilitar a selecao dos tamanhos dos elemtos*/
+    box-sizing: border-box;
+}
+body{
+    margin: 0;/*margin:0 para tirar aquela borda que fica em cima do cabaçalho*/
+    background-color: #2D3233;
+}
+nav{/*Este é o menu de seleção das paginas, com um display flex e em direção de linhas, e um space-around para deistanciar igualmente as opçoes na linha*/
+    background-color: #2D3233;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+.item{/*Esta são as opçoes do menu, com um alinhamento no centro da div, e uma margin-top para distanciar do cabeçalho por questão de estilo*/
+    background-color: #2D3233;
+    padding: 10px;
+    text-align: center;
+    margin-top: 10px;
+}
+.item a{/*Estes são os links dentro das opções, aqui eu apenas retiro a decoração do texto com text-decoration: none; e altero a cor, o tamanho e preenchimento*/
+    color:#4B7980;
+    padding: 8px 16px; /* O primero valor se refere a distancia superior entre os elementos, o segundo valor se a distançia lateral */
+    text-decoration: none; /* Retira a linha de baixo das palavras */
+    font-size: 30px;  
+}
+.item a:hover{/*hover das opçoes que deixa a cor delas um pouco mais clara quando se passa o mouse em cima*/
+    color:#43DEB7; 
+}
+section{/*Aqui temos as sections que são usadas em todo o site, aqui defino suas bordas, margems, cor, tamanho e preenchimento*/
+    background-color: white;
+    border-radius: 15px 50px;
+    padding: 30px;
+    margin: 50px;
+    margin-top: 100px;
+    height: auto;
+}
+#floLeft{/*Esta aqui serve apenas para alterar o tamanho da sacition e definir um float para que possa haver uma seciton ao lado da outra*/
+    float: left;
+    width: 50%;
+}
+#floRigth{/*Esta aqui serve apenas para alterar o tamanho da sacition e definir um float para que possa haver uma seciton ao lado da outra*/
+    
+    float: right;
+    width: 30%;
+}
+section h1{
+    color:#43DEB7 ;
+    font-size: 50px;
+
+}
+p{
+    color: #2D3233;
+    font-size: 30px;
+}
+::selection{/*Estilização do marcador de texto*/
+    color: #43DEB7;
+    background-color: #2D3233;
+}
+#post{/*Isto é apenas um balão de texto estilizado*/
+    background-color: #45bbb9bb;
+    border-radius: 15px 30px;
+    padding: 5px;
+    color: #ffffff;
+    text-align: center;
+}
+footer{/*Aqui temos o rodapé, ele tem um clear:both para limpar qualquer outo diaplay que tivesse a cima*/
+    clear: both;
+    text-align: left;
+    background-color: #4B7980;
+    margin-top: 0;
+    padding: 1px;
+    height: 8%;
+    color: white;
+}
+input{/*Estes são os inputs onde retirei as bordas aredondei-as e colori as caixas de texto por estilo*/
+    background-color:  #2bb391a6 ;
+    border: none;
+    border-radius: 5px; 
+    padding: 8px; 
+    color: white;
+    width: 100%;
+}
+input::placeholder{/*definido a cor dos placeholders dos inputs para deixar visivelmente com mais contrate e tbm mais atraente*/
+    color: white;
+}
+#submit{/* Este é o botao de envio do formulario ele e visualmente difernte do resto dos inputs para se destacar, ele não funciona de fato, é só visual*/
+    background-color: #2D3233; 
+    color:white;
+}
+#submit:hover{/*hover para "acender" o texto enviar do input*/ 
+    color:  #43DEB7;
+}
+.conteiner{/*conteiner com display grid, e definição de suas colunas e linhas*/
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto ;
+}
+article{/* Aqui definimos como serão as divs dentro do conteiner grid em que estão os links do portifolio*/
+    clear: both;
+    background-color: white;
+    border-radius: 50px;
+    padding: 50px;
+    margin: 50px;
+    text-align: center;
+}

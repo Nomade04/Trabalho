@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quem sou eu?</title>
+    <link rel="stylesheet" href="style.css"><!--linkando o CSS-->
+</head>
+<body>
+    <header><!--Cabecalho sera igual a todas as demais paginas alterando apenas o h1-->
+        <h1>Meus contatos</h1>
+    </header>
+    <nav ><!--Este sera o menu de selecão e sera igual a todas as demais paginas, dentro deste nav
+        a outras divs com a class item dento delas a um link para outras paginas do cite-->
+        <div class="item"><a href="index.html">Sobre Mim</a></div>
+        <div class="item"><a href="portifolio.html">Portfólio</a></div>
+        <div class="item"><a href="contato.html">Contato</a></div>
+        <div class="item"><a href="formacao.html">Formação</a></div>
+    </nav>
+    <section>
+        <h1>Quer falar comigo?</h1>
+        <p>Basta acessar uma das redes socias, ou pode me inviar um mensagem por E-mail.</p>
+    </section>
+    <section id="floLeft" style="margin-top: 0;"><!--Nesta section adicionei um id para poder estilizar a posicão dela por meio de um float-->
+        <form action=""><!--Aqui temos o formulario de envio de mensagem. Optei por questão de estilo deixar os (label) vasios e colocar um placeholder nos inputs para induzir os textos que devem ser colocados-->
+            <h1>E-mail</h1>
+            <p>Prencha o formulario abaixo para me enviar uma mensagem.</p>
+            <label for="nome"></label>
+            <input type="text" name="nome" placeholder="Seu nome aqui"><br><br>
+            <label for="e-mail"></label>
+            <input type="email" name="e-mail"placeholder="E-mail"><br><br>
+            <label for="mensagem"></label>
+            <input type="text" name="mensagem" placeholder="Digite aqui sua mensagem"><br><br>
+            <input type="submit" id="submit">
+        </form>
+    </section> 
+    <section id="floRigth" style="margin-top: 0;"><!--Nesta section adicionei um id para poder estilizar a posicão dela por meio de um float-->
+        <h1>Contatos</h1>
+        <ul><!--Aqui temos mais um lista com os contatos, coloquei um span para alterar a cor dos conteudos somente para simular visalmente um link, pq eles não funcionam de fato-->
+            <li style="font-size: larger;">E-mail:<span style="color: #2a866f ;"> joao.z20.godoi.900@gmail.com</span> </li>
+            <li style="font-size: larger;">Instagram: <span style="color: #2a866f ;">@victorgodoiii_</span></li>
+            <li style="font-size: larger;">Telefone: <span style="color: #2a866f ;">(11) 97147-4599</span></li>
+        </ul>
+    </section>
+    <footer><!--Rodapé a partir daqui voltara a ser igual ao resto das paginas-->
+        <p style="color: white;  margin: 0; margin-left: 10px; margin-top: 5px;">Desenvolvido para fins educacionais</p>
+        <h4 style="margin-left: 10px; margin-top: 1px;" >Postado em: 19/08/2004</h4>
+    </footer>
+    
+</body>
+</html>

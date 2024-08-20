@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 2</title>
+
+    <!--Para linkar o CSS ao HTML de forma externa deve se digitar a sintaxe a baixo-->
+    <!--<link rel="stylesheet" href="Aula 2.css">-->
+    <!--Ou pode-se fazer de forma interna basta digitar a teg: <style> Coloque aqui seu estilo </style> -->
+    <!--Ou tambem no proprio elemento com o style inline-->
+    <style>
+        /*primerio celeciona-se o seletor q deseja alterar EX: h1. depois seleciona a propriedade que deseija alterar e 
+o valor a ser dado a ela separados por dois pontos EX: h1{color:red ; font-size:12px} caso queira alterar mais de uma propriedade devera 
+separalas por ponto e virgula como foi mostrado. */
+
+h1{color:red ; font-size:30px} /* color altera a cor das fontes da pagina */
+
+/*ha quatro tipos de seletor :'elemanto' que o proprio objeto como no caso do h1,
+ 'id'  que e unico para cada objeto tem como sintaxe '#id', 'class' que pode-se compor de varios objetos que participão da mesma class
+ tem como sintaxe'.calss' e o 'universal' se aplica a todos os textos da pagina, tem como sintaxe '*universal'.
+ Há uma hierarquia dos seletores onda caso haja uma divergencia de comamdos um se sobresaira sobre o outro, onde o id é o mais especifico
+e sobrescrevera qualquer outro seletor, em seguida ficara as class que sobrescreveram os elemantos e por ultimo os universais*/
+ 
+
+ #Ex-de-id{color: blue;font-size: 20px;}/*Este por exemplo e um id */
+
+ .Ex-de-class{color: forestgreen; font-size: 15px;}/*este por exmplo e uma class */
+ 
+ /* tbm e possivel definir o estilo inline, ou seja direto elemnto que deseja alterar basta escrever dentro da teg por exemplo:
+ <h1 style="color: blueviolet;font-size: 35px"class>Aqui seu texto</h1> esta especificao inline se sobrepõe sobre todas
+  as outras inclusive sobre o id */
+
+  /* exemplo de seletor universal */
+*{ 
+    margin: 0 auto; /* Quando você define margin: auto, o navegador calcula automaticamente as margens esquerda e direita para distribuir o espaço disponível igualmente, centralizando o elemento.*/
+
+    padding:0 ; /* A propriedade padding no CSS é usada para definir o espaçamento interno entre o conteúdo de um elemento e suas bordas. Isso ajuda a criar um espaço “acolchoado” dentro do elemento, melhorando a legibilidade e a estética do layout12.
+    Por exemplo, se você tiver um parágrafo de texto dentro de uma caixa, o padding pode ser usado para garantir que o texto não fique colado nas bordas da caixa, proporcionando um espaço confortável ao redor do conteúdo */
+
+    text-align: center; /* A propriedade text-align no CSS é usada para definir o alinhamento do conteúdo inline, como texto, dentro de um elemento pai em bloco
+    Aqui estão alguns valores comuns que você pode usar com text-align:
+
+    left: Alinha o texto à esquerda.
+    right: Alinha o texto à direita.
+    center: Centraliza o texto.
+    justify: Justifica o texto, alinhando-o tanto à esquerda quanto à direita. */
+
+    color: black;
+
+ }
+ p, h2{
+    text-align: center;
+ }
+ .tamanho{
+    width: 30%; /* A propriedade width (largura) no CSS é usada para definir a largura da área de conteúdo de um elemento. Essa área de conteúdo fica dentro do preenchimento (padding), da borda (border) e da margem (margin) do elemento12.
+    Aqui estão alguns valores comuns que você pode usar com width:
+    
+    auto: O navegador calcula a largura automaticamente.
+    length: Define a largura em unidades específicas, como pixels (px), centímetros (cm), etc.
+    percentage: Define a largura como uma porcentagem da largura do contêiner pai.*/
+
+    height: 250px; /* A propriedade height no CSS é usada para definir a altura da área de conteúdo de um elemento. recebe os memos valores de width */
+
+    border: solid 1px; /* A propriedade border no CSS é usada para definir a borda de um elemento. Ela permite especificar o estilo, a largura e a cor da borda12.
+    Aqui estão alguns valores comuns que você pode usar com border:
+    
+    border-style: Define o estilo da borda (e.g., solid, dashed, dotted, double, groove, ridge, inset, outset, none, hidden).
+    border-width: Define a largura da borda (e.g., thin, medium, thick, ou um valor específico como 2px).
+    border-color: Define a cor da borda (e.g., red, #000, rgb(0, 0, 0)).
+    Tbm e possivel definir bordas individualmente para cada lado:
+    border-top = borda superior, border-bottom = borda inferior, border-right = borda direita, border-left = borda esquerda. */
+
+    border-radius: 50px 5px; /* A propriedade border-radius no CSS é usada para criar cantos arredondados em elementos. Você pode definir um único raio para fazer cantos circulares ou dois raios para fazer cantos elípticos12.
+    Aqui estão alguns exemplos de uso:
+    
+    Um valor: Aplica o mesmo raio a todos os quatro cantos.
+    .tamanho{
+      border-radius: 50px;
+    }
+    Dois valores: O primeiro valor aplica-se aos cantos superior esquerdo e inferior direito, e o segundo valor aplica-se aos cantos superior direito e inferior esquerdo. 
+    .tamanho{
+      border-radius: 50px 5px;
+    }
+     */
+ }
+ .espaco{
+    padding: 20px;
+ }
+ .principal{
+   width: 100%;
+   padding: 20px;
+   margin: auto; 
+ }
+ .cor1{
+    background-color: chocolate; /* Define q cor de fundo do elemento ou conteiner */
+   
+ }
+ .cor2{
+    background-color: aqua;
+   
+ }
+ .cor3{
+    background-color: cadetblue;
+    
+ }
+
+ /* A seguir a alguns exempls de width e height  auto, px, e %, tbm alguns tipos de borda */
+ div#um{
+   width: auto;
+   height: auto;
+   border: 5px groove rgb(173, 33, 216);
+ }
+ div#dois{
+   width: 200px;
+   height: 50px;
+   border: 1px solid black;
+ }
+ div#tres{
+   width: 60%;
+   border: 3px double rgb(88, 22, 243);
+ }
+
+ #h11{
+  font-family: cursive; /* Esta funcao serve para definir a fonte do texto */
+  text-align: center; /* Esta funcao define o alinhamento do elemanto em relacao a area que le dispõem */
+  color: blue;
+ }
+ #h21{
+  text-align: left;
+ }
+ #h31{
+  font-family: arial;
+  text-align: right;
+ }
+ div#box-model{
+  width: 350px;
+  padding: 10px;
+  border: 5px dotted green;
+  margin: 0;
+  background-color: burlywood;
+  box-sizing: border-box; /* Ajusta a dimensao maxima da div de acordo com o width e o height, tornando os o limite maximo da box, caso nao o use a largura seriam somadas ao border, padding e margin, se o usar, por exemplo com width de 350px, e uma borda de 10 px, vc tera uma box de 350px de largura com uma borda de 10px. Caso nao o usasse teria uma box com 360px de largura pois seria somado com o tamanho da borda */
+ }
+ ul, li{
+  display: inline; /* O display define como o elemato sera exibido, o inline por exemplo dispõem todos os elemantos na mesma linha */
+}
+/*Position ajuda no posicionamento de 
+elementos do lay-out
+Position pode ter os valores: estático, fixo, 
+absoluto e relativo */
+
+div.static{
+  position: static;
+  border: 3px solid purple;
+}
+div.relative{
+  position: relative;
+  left: 30px;
+  border: 3px solid purple;
+}
+div.fixed{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  border: 3px solid purple;
+}
+div.relative{
+  position: relative;
+  width: 400px;
+  height: 200px;
+  border: 3px solid purple;
+}
+div.absolute{
+  position: absolute;
+  top: 80px;
+  right: 0;
+  width: 200px;
+  height: 100px;
+  border: 3px solid purple;
+}
+/*z-index:
+A propriedade z-index permite alterar a 
+ordem de empilhamentos dos elementos, 
+porém só funciona com elementos que 
+possuem a propriedade position */
+    </style>
+</head>
+<body>
+    <h1>Propriedades</h1>
+    <h1 class="Ex-de-class">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima porro odit fugit optio! Dolorem soluta eos velit? Sed dolor quidem explicabo. Rerum sint iusto incidunt, quae obcaecati odio omnis voluptatum?</p>
+    <h1 id="Ex-de-id" class="Ex-de-class">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda unde quis quasi nihil asperiores optio similique corporis! Exercitationem velit atque, temporibus reprehenderit possimus esse modi sequi expedita explicabo ducimus cumque.</h2>
+    <h1 class="Ex-de-class">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos dolorem voluptatum provident pariatur veniam eveniet laboriosam culpa nulla quae perspiciatis corporis porro optio, voluptates, non architecto dolorum placeat sit consectetur!</h3>
+
+    <h1 style="color: blueviolet;font-size: 35px"class="Ex-de-class">Texto com style inline</h1><!--Style inline-->
+
+    <br><br>
+
+    <h1>Divs</h1>
+    <div class="principal">
+        <div class="tamanho cor2"><!--Para colocar mais de uma class em um unico elemento basta dar um espaco entre as classes EX: 'tamanho' e 'cor2'-->
+
+            <h2>Ola mundo!</h2>
+            <p class="espaco">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi vitae at quisquam, fugiat ut facere architecto asperiores. Blanditiis soluta accusamus beatae reprehenderit, in, sit reiciendis id quae labore sint suscipit, optio rerum obcaecati quos eum illum fuga dignissimos ipsa. Laudantium ea numquam harum dolore sunt eaque perferendis quae sint vero.
+            </p>
+        </div>
+        <br>
+        <div class="tamanho cor3">
+            <h2>Ola João!</h2>
+            <p class="espaco">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quidem modi fugiat asperiores omnis, veniam quo incidunt, doloribus aut rerum amet culpa error molestiae quaerat ipsum ab aspernatur unde nam vero debitis expedita quisquam voluptatem ipsa exercitationem. Blanditiis sapiente consequatur, expedita nostrum labore et odit iusto laborum omnis ipsam aut?
+            </p>
+        </div>
+        <br>
+        <div class="tamanho cor1 ">
+            <h2>Thau Mundo!</h2>
+            <p class="espaco">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo quam dignissimos facere doloribus quibusdam a. Ad cumque dignissimos officia ducimus perspiciatis. Vel delectus illum sunt facilis excepturi. Eaque nemo laudantium dolorem suscipit pariatur voluptatum fuga fugiat aspernatur rem, voluptates asperiores quisquam dolorum accusantium sequi alias ab quaerat necessitatibus deleniti. Autem!
+            </p>
+        </div>
+    </div>
+
+    <div id="um">Um: <br>
+        width: auto; <br>
+        height: auto; <br>
+        border: 5px groove rgb(173, 33, 216);
+    </div>
+    <br>
+    <div id="dois">Dois: <br>
+        width: 200px; 
+        height: 50px; 
+        border: 1px solid black;
+    </div>
+    <br>
+    <div id="tres">Tres: <br>
+        width: 60%; <br>
+        border: 3px double rgb(88, 22, 243);
+    </div>
+    <br>
+    <h1>Formatação de texto</h1>
+    <br>
+    <h1 id="h11">H1: <br>
+        font-family: cursive; <br> 
+        text-align: center;<br>
+        color: blue;</h1>
+    <br>
+    <h2 id="h21"> H2: <br>
+        text-align: left;</h2>
+    <br>
+    <h3 id="h31">H3: <br>
+        font-family: arial;<br>
+        text-align: right;</h3>
+
+    <div id="box-model">Box Model</div>
+    <br><br>
+    <h1>Flout</h1>
+    <br>
+    <img src="https://img.freepik.com/premium-photo/investigations-defunct-chemistry-facility-laboratory-chemistry-instruction_410516-4221.jpg?w=900" width="40%" style="flout: right;">
+    <img src="https://neuroprism.fr/wp-content/uploads/2023/09/198712127_presentation_normal_none.jpg" width="40%" style=" float:left;">
+    <br><br>
+    <h2>lista com display inline</h2>
+    <br>
+    <ul>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+    </ul>
+    <br><br>
+    <h2>position</h2> <br>
+
+    <h2>Posição estatica</h2>
+    <br>
+    <p>Um elemento com posição: estatico; e sempre posicionado de acordo com o fluxo normal da pagina</p>
+    <div class="static">
+        Aqui - Position: static;
+    </div>
+
+    <h2>Posição relativa</h2>
+    <br>
+    <p>Um elemto com posição relativa esta posicionado em relação a sua posição normal</p>
+    <div class="relative">
+        Aqui - position: relative;
+    </div>
+
+    <h2>Posição absoluta</h2>
+    <br>
+     <p>Um elemento com posição: absoluto; e posicionado em relação ao ascestral posicionado mais proximo ( em vez de em relação a janela de visualização, como fixo)</p>
+
+     <h2>Posição fixa</h2>
+     <p>A posição fixa fica fixada em um lugar selecionado na tela mesmo q vc navegue pela pagina</p>
+     <div class="fixed">
+        Aqui - position: fixed;
+     </div>
+</body>
+</html>
